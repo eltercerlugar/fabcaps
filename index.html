@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fab Academy Wallet</title>
+  <script src="https://embed.thirdweb.com/scripts/embed.js"></script>
+</head>
+<body>
+  <h1 style="text-align: center;">Fab Academy Wallet</h1>
+  <div id="thirdweb-embedded-wallet" style="max-width: 600px; margin: 2rem auto;"></div>
+
+  <script>
+    ThirdwebEmbed.renderWalletEmbed({
+      clientId: "TU_CLIENT_ID", // ← pon aquí tu Client ID
+      chainId: 44787, // ← Celo Alfajores (testnet)
+      tokenAddress: "TU_DIRECCION_DEL_CONTRATO" // ← tu contrato ERC-20
+    });
+  </script>
+</body>
+</html>
